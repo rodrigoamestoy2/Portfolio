@@ -83,7 +83,9 @@ nav {
   padding: 40vh 0;
   width: 100%;
   color: var(--font-color);
-  background-image: url(/Portfolio/img/introduction.jpg);
+  background-image: url("https://rodrigoamestoy2.github.io/introduction.jpg");
+
+);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -318,7 +320,7 @@ footer img {
     padding: 40vh 0;
     width: 100%;
     color: var(--font-color);
-    background-image: url(/Portfolio/img/introduction.jpg);
+    background-image: 
     background-repeat: repeat;
     background-attachment: fixed;
     background-position: center;
