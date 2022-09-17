@@ -1,0 +1,42 @@
+main {
+    min-height: calc(100vh - 160px);
+  }
+
+#btnBuscar {
+  color: whitesmoke;
+  background-color: rgba(0, 0, 255, 0.5);
+  border: 1px double rgba(0, 0, 255, 0.75);
+  border-radius: 15%;
+}
+
+#btnBuscar:hover {
+  cursor: pointer;
+  
+}
+
+.card img {
+  max-width: 30vw;
+  max-height: 15vw;
+  padding: 5px;
+  background-color:rgba(32, 178, 171, 0.35);
+  border-radius: 10%;
+  margin-bottom: 1%;
+}
+
+.card {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+  max-height: 350px;
+  overflow-y: auto;
+  padding: 10px;
+  margin-bottom: 2vw;
+  box-shadow: 5px 3px 1px 1px rgba(0, 0, 255, 0.295);
+  letter-spacing: 1px;
+  background-color: rgba(32, 178, 171, 0.1);
+}
+
+
+.card figcaption {
+  padding: 2px;
+  text-align: center;
+}
+

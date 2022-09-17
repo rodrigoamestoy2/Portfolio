@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8"/>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="css/index.css"/>
+   <title>Web Portfolio | Rodrigo Amestoy</title>
+ </head>
+ <body>
+  <header>
+    <nav>
+      <div class="logo col-sm-4">Rodrigo Amestoy</div>
+      <div class="links col-sm-7">
+        <ul>
+          <il><a href="#introduction">Home</a></il>
+          <il><a href="#projects">Projects</a></il>
+          <il><a href="#about">About Me</a></il>
+          <il><a href="#contact">Contact</a></il>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="introduction">
+      <div class="introduction-container">
+        <div class="introduction">
+          <div class="introduction-fonts">
+            <h2>Hi,</h2>
+            <h2>I'm Rodrigo Amestoy</h2>
+            <h5>Frontend Developer</h5>
+          </div>
+          <div class="icon col-sm-4">
+            <img src="IMG/intro-icon.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="projects-container">
+        <div class="projects-title">
+          <h2>Projects</h2>
+        </div>
+        <div class="top-projects">
+          <div class="mob-dis row">
+            <div class="col col-sm-4">
+              <div class="project">
+                <div class="row">
+                  <img src="/IMG/ecommerce.jpg" alt="">
+                  <div class="overlay">
+                    <h5>E-Commerce</h5>
+                    <p>Example Of A Funcional E-Commerce (Some functions are still in development)</p>
+                    <button id="JaP-button">See Project</button>
+                    <button id="JaP-button2">Github</button>
+                  </div>
+                </div>
+                <div class="row">
+                  <p>E-COMMERCE</p>
+                </div>
+              </div>
+            </div>
+            <div class="col col-sm-4">
+              <div class="project">
+                <div class="row">
+                  <img src="/IMG/todolist.jpg" alt="">
+                  <div class="overlay">
+                    <h5>Todo List</h5>
+                    <p>Todo List with variety of functions</p>
+                    <button id="todo-btn">See Project</button>
+                    <button id="todo-btn2">Github</button>
+                  </div>
+                </div>
+                <div class="row">
+                  <p>TODO LIST</p>
+                </div>
+              </div>
+            </div>
+            <div class="col col-sm-4">
+              <div class="project">
+                <div class="row">
+                  <img src="/IMG/nasa.jpg" alt="">
+                  <div class="overlay">
+                    <h5>Nasa API</h5>
+                    <p>Nasa Images Searcher</p>
+                    <button id="nasa-btn">See Project</button>
+                    <button id="nasa-btn2">Github</button>
+                  </div>
+                </div>
+                <div class="row">
+                  <p>NASA API</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row more-projects">
+            <button id="more-projects">MORE PROJECTS</button>
+            <button id="more-projects2">MORE PROJECTS REPO</button>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="about-container">
+        <div class="about-me">
+          <h2 id="about-title">About Me</h2>
+          <div class="info-skills">
+            <h4 id="info-title">Skills</h4>
+            <div class="row" id="justify">
+
+                <div class="col">
+                  <div class="row"><img src="IMG/html-5.png" alt=""></div>
+                  <div class="row"><img src="IMG/css-3.png" alt=""></div>
+                  <div class="row"><img src="IMG/js.png" alt=""></div>
+                </div>
+                <div class="col">
+                  <div class="row"><img src="IMG/sql-server.png" alt=""></div>
+                  <div class="row"><img src="IMG/bootstrap.png" alt=""></div>
+                  <div class="row"><img src="IMG/react.png" alt=""></div>
+                </div>
+              </div>
+
+          </div>
+          <div class="info-about">
+            <h4 id="info-title">My Passion</h4>
+            <p>I always wanted to develop myself in the IT world, and when I found the opportunity I jumped right into it. I started with enrolling myself in JaP and constantly searching for more and more information, managing not only to suceed in JaP but also reach a great base of programming knowledge which nowdays gives me a solid trust to start my professional career as a developer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="contact-container">
+          <h2>Contact</h2>
+        <div class="email-form">
+          <p>Please feel free to contact me for any doubt or any feedback</p>
+          <form action="https://formsubmit.co/rodrigoamestoy2@gmail.com" method="POST">
+            <div class="row">
+              <label for="">E-mail</label>
+              <input type="email" placeholder="youremail@example.com" name="email">
+            </div>
+            <div class="row">
+              <label for="">Subject</label>
+              <input type="text" placeholder="Subject" name="_subject">
+              <input type="hidden" name="_captcha" value="true">
+            </div>
+            <div class="row">
+              <label for="">Message</label>
+              <input type="text" name="message" placeholder="Get in contact!" id="">
+            </div>
+            <div class="row col-sm-4">
+              <button type="submit">Send E-mail</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="icons">
+      <img src="IMG/github.png" alt="" id="github">
+      <img src="IMG/linkedin.png" alt="" id="linkedin">
+      <img src="" alt="">
+    </div>
+  </footer>
+  <script src="js/index.js"></script>
+ </body>
+</html>

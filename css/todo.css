@@ -1,0 +1,142 @@
+body {
+    margin: 10px;
+    background-color: whitesmoke;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 2%;
+    font-size: 4vw;
+}
+
+.container {
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    background-color: rgba(128, 128, 128, 0.418);
+    padding: 10px;
+}
+
+/* List Container */
+
+.list-container {
+    border: 1px solid black;
+    border-top-left-radius: 1%;
+    border-top-right-radius: 1%;
+    background-color: white;
+    padding: 2%;
+    margin: 1px;
+    margin-top: 1%;
+}
+
+.h3-container { 
+    font-size: 3vw;
+    max-height: 100px;
+    width: 90%;
+    border-bottom: 1px solid black;
+}
+
+.btn-container {
+    flex-direction: column-reverse;
+}
+
+.btn-container ul {
+    list-style-type: none;
+}
+
+    .btn-container button {
+        background-color: #fff;
+    border: 1px solid lightblue;
+    width: 100%;
+    padding: 0.5vw;
+    margin-bottom: 0.5vw;
+}
+
+.btn-container i{
+    color: green;
+}
+
+.p-container {
+    font-size: 1.5vw;
+    padding: 0.5vw;
+}
+
+/* Agregar Form */
+
+.agregar {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.agregar input {
+    border: 1px solid lightseagreen;
+    margin-right: 1%;
+    outline: none;
+    text-align: center;
+}
+
+.agregar input:hover {
+    border: 1px solid blue;
+    transform:rotate(360deg);
+    transition: 1s;
+}
+
+.agregar form {
+    display: flex;
+}
+
+#agregar {
+    border: 1px solid lightgreen;
+    color: green;
+    background-color: lightgreen;
+}
+
+#borrar {
+    border: 1px solid lightsalmon;
+    color: red;
+    background-color: lightsalmon;
+}
+
+#borrar:hover {
+    background-color: red;
+    transition: 2s;
+}
+
+#agregar:hover {
+    background-color: green;
+    transition: 2s;
+}
+
+@media (max-width: 760px) {
+
+    .h3-container { 
+        font-size: 7vw;
+        max-height: 100px;
+        width: 90%;
+        border-bottom: 1px solid black;
+    }
+    .agregar input {
+        border: 1px solid lightblue;
+        margin-right: 1%;
+        outline: none;
+        text-align: center;
+        width: 40%;
+    }
+    .p-container {
+        font-size: 4vw;
+        padding: 1vw;
+    }
+    .agregar button {
+        width: 40%;
+    }
+    .btn-container button {
+        background-color: #fff;
+        border: 1px solid lightblue;
+        width: 100%;
+        padding: 4vw;
+        margin-bottom: 1vw;
+    }
+}
