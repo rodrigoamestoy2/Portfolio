@@ -326,8 +326,6 @@ form input {
 
 footer {
   background-color: rgb(206, 204, 204);
-  justify-content: space-around;
-  display: flex;
   padding: 5px;
 }
 footer img {
@@ -349,6 +347,7 @@ footer img {
 .icons a:hover {
   background-color: rgba(148, 146, 146, 0.685);
 }
+
 @media (max-width:700px) {
 
   body {
