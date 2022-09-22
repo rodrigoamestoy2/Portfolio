@@ -274,7 +274,6 @@ li:hover {
   justify-content: space-around;
   --bs-gutter-x: auto;
   --bs-gutter-y: auto;
-
 }
 
 /* Contact */
@@ -337,7 +336,19 @@ footer img {
   max-height: 25px;
   cursor: pointer;
 }
-
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.icons a {
+  text-decoration: none;
+  font-family: var(--info-h4-font);
+  color: rgb(22, 22, 22);
+}
+.icons a:hover {
+  background-color: rgba(148, 146, 146, 0.685);
+}
 @media (max-width:700px) {
 
   body {
