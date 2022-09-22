@@ -174,11 +174,11 @@ li:hover {
   margin: 0 auto;
 }
 .project p {
-  padding-top: 2vh;
   letter-spacing: 2px;
   font-family: var(--links-font);
 }
 .overlay {
+  font-size: .75rem;
   transition: .5s ease;
   opacity: 0;
   position: relative;
@@ -189,7 +189,11 @@ li:hover {
   text-align: center;
   top: -10vw;
 }
+.mobile-display {
+  display: none;
+}
 .overlay button {
+  font-size: 1rem;
   letter-spacing: 1px;
   border: 1px solid rgba(0, 0, 0, 0.726);
   margin: 5px;
@@ -208,10 +212,10 @@ li:hover {
 .more-projects {
   width: 20%;
   margin: 0 auto;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 .more-projects button {
-  margin: 0 auto;
+  margin: 10px auto;
 }
 .project:hover img {
   opacity: 0.3;
@@ -261,13 +265,16 @@ li:hover {
 }
 .info-skills img {
   width: 75px;
-  height: 60px;
+  height: 80px;
   margin: 20px;
   padding-bottom: 5px;
   border-bottom: 4px solid whitesmoke;
 }
 .row {
   justify-content: space-around;
+  --bs-gutter-x: auto;
+  --bs-gutter-y: auto;
+
 }
 
 /* Contact */
@@ -300,8 +307,14 @@ form {
   flex-wrap: wrap;
   width: 40%;
 }
-form button {
-  border: 1px solid white;
+form .row button {
+  border: none;
+  width: 50%;
+  margin-top: 5px;
+  align-self: center;
+}
+form .row button:hover {
+  background-color: rgb(190, 190, 190);
 }
 form label {
   margin: 10px;
@@ -327,9 +340,12 @@ footer img {
 
 @media (max-width:700px) {
 
-  /* Navbar */
-
-    nav {
+  body {
+    max-width: 100%;
+  }
+  /* */
+  nav {
+    max-width: 100%;
     flex-direction: column;
     align-items: flex-start;
   }
@@ -338,14 +354,14 @@ footer img {
     flex-direction: column;
   }
   .logo {
-    margin-left: 2vh;
+    margin-left: 0vh;
   }
   .toggle-button {
     display: flex;
   }
   .links {
     display: none;
-    width: 100%;
+    width: 90%;
   }
   .active {
     display: block;
@@ -398,22 +414,35 @@ footer img {
   /* Projects */
 
   .projects-container {
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
   }
   .row {
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
+    --bs-gutter-x: auto;
+    --bs-gutter-y: auto;
     display: flex;
     flex-direction: column;
     margin-top: calc(var(--bs-gutter-y) * -1);
-    margin-right: calc(var(--bs-gutter-x) * -.5);
-    margin-left: calc(var(--bs-gutter-x) * -.5);
+  }
+  .top-projects {
+    width: 80%;
+  }
+  .project .row:nth-child(2) {
+    margin-top: -35%;
+    margin-bottom: 10%;
+  }
+  .mobile-display {
+    display: block;
   }
   .projects img {
-    width: 100px;
+    max-width: 80px;
     height: 10px;
+  }
+  .overlay {
+    top: -18vh;
+    width: 60%;
   }
   .more-projects {
     width: 50%;
@@ -426,4 +455,25 @@ footer img {
 
   /* Skills */
 
+  .info-skills .row {
+    flex-direction: row;
+  }
+  .info-skills .col {
+    width: 50%;
+    margin: auto auto;
+  }
+  .info-skills img {
+    max-width: 50px;
+  }
+
+  /* Form */
+
+  .email-form input {
+    margin: auto auto;
+  }
+
+  .email-form button {
+    margin: 5px;
+    text-align: center;
+  }
 }
