@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
     moreBtn2 = document.getElementById('more-projects2'),
     github = document.getElementById('github'),
     linkedin = document.getElementById('linkedin'),
+    toggleBtn = document.getElementById('toggle-btn'),
+    navLinks = document.getElementsByClassName('links')[0],
     nasaBtn = document.getElementById('nasa-btn');
 
     JaPBtn.addEventListener('click', () => {
@@ -47,4 +49,8 @@ document.addEventListener('DOMContentLoaded', () => {
     github.addEventListener('click', () => {
         window.open('https://github.com/rodrigoamestoy', '_blank')
     });
+
+    toggleBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    })
 });
