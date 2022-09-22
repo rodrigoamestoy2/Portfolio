@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(189, 91, 81);
+}
+
+header {
+    position: sticky;
+    position: -webkit-sticky;
+}
+
+.alert {
+    margin: 0 auto;
+    margin-top: 10%;
+    text-align: center;
+}
