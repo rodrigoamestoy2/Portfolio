@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     moreBtn.addEventListener('click', () => {
-        window.alert('Function is under development');
+        window.open('projects.html', '_blank');
     });
     moreBtn2.addEventListener('click', () => {
         window.open('https://github.com/rodrigoamestoy/Projects', '_blank')
