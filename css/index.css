@@ -369,10 +369,9 @@ footer img {
     width: 100%;
     color: var(--font-color);
     background-image: url(/Portfolio/img/introduction.jpg);
-    background-repeat: repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: 350vw;
+    height: 10vw;
   }
   .introduction {
     width: 100%;
@@ -435,7 +434,4 @@ footer img {
 
   /* Skills */
 
-  #justify {
-    align-self: center;
-  }
 }
